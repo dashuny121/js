@@ -1,5 +1,5 @@
 /*! Superslides - v0.6.2 - 2013-07-10
-* https://github.com/nicinabox/superslides
+* httpss://github.com/nicinabox/superslides
 * Copyright (c) 2013 Nic Aitch; Licensed MIT */
 (function(window, $) {
 

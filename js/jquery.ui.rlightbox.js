@@ -83,7 +83,7 @@ $.extend($.ui.rlightbox, {
 			// sets: {
 			//		setName: [
 			//			{
-			//				url: "http://www.youtube.com?v=u408408598,
+			//				url: "https://www.youtube.com?v=u408408598,
 			//				type: "youtube"
 			//			},
 			//			{…}
@@ -249,7 +249,7 @@ $.extend($.ui.rlightbox, {
 				_url = $anchor.attr( "href" ),
 				_service = {
 					youtube: {
-						urls: [/(http:\/\/www\.youtube\.com\/watch\?v=([\w-_]+))&?/],
+						urls: [/(https:\/\/www\.youtube\.com\/watch\?v=([\w-_]+))&?/],
 						type: "youtube"
 					},
 					image: {
@@ -257,7 +257,7 @@ $.extend($.ui.rlightbox, {
 						type: "image"
 					},
 					vimeo: {
-						urls: [/(http:\/\/vimeo\.com\/groups\/\w+\/videos\/(\w+))&?/, /(http:\/\/vimeo\.com\/(\w+))&?/],
+						urls: [/(https:\/\/vimeo\.com\/groups\/\w+\/videos\/(\w+))&?/, /(https:\/\/vimeo\.com\/(\w+))&?/],
 						type: "vimeo"
 					},
 					flash: {
@@ -855,11 +855,11 @@ $.extend($.ui.rlightbox, {
 				)				
 				.each(
 					function() {
-						// the code comes from https://github.com/desandro/imagesloaded
+						// the code comes from httpss://github.com/desandro/imagesloaded
 						// cached images don't fire load sometimes, so we reset src.
 						if ( this.complete || this.complete === undefined ){
 						  var src = this.src;
-						  // webkit hack from http://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
+						  // webkit hack from https://groups.google.com/group/jquery-dev/browse_thread/thread/eee6ab7b2da50e1f
 						  // data uri bypasses webkit log warning (thx doug jones)
 						  this.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 						  this.src = src;
@@ -2104,8 +2104,8 @@ $.extend($.ui.rlightbox, {
 				height: 100
 			},
 			providers: {
-				vimeo: "http://www.vimeo.com/api/oembed.json?callback=?",
-				youtube: "http://gdata.youtube.com/feeds/api/videos/"
+				vimeo: "https://www.vimeo.com/api/oembed.json?callback=?",
+				youtube: "https://gdata.youtube.com/feeds/api/videos/"
 			},
 			showErrorMessage: false,
 			currentSetElement: {},
@@ -2138,7 +2138,7 @@ $.extend($.ui.rlightbox, {
 						"</button>" + 
 					"</div>" +
 				"</div>",
-			htmlYoutube: "<iframe class='youtube-player' type='text/html' width='{width}' height='{height}' src='http://www.youtube.com/embed/{url}' frameborder='0'></iframe>",
+			htmlYoutube: "<iframe class='youtube-player' type='text/html' width='{width}' height='{height}' src='https://www.youtube.com/embed/{url}' frameborder='0'></iframe>",
 			htmlLightbox: "" +
 				"<div id='ui-lightbox' class='ui-widget ui-widget-content ui-corner-all' style='display: none'>" +
 					
